@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta description -->
+    <meta name="description" content="Ejercicio práctico para Insideers">
+    
+    <!-- Meta Keywords -->
+    
+    <meta name="Keywords" content="Insideers, html, css, JQuery, Isotope">
+    <meta name="author" content="Silvia Pujadas">
+    <meta name="copyright" content="Silvia Pujadas">
+    <meta name="locality" content="Barcelona, España">
+    <meta name="revised" content="Januray 2023">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Link jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Link libreria Isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Link js -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Link fabicon -->
+    <link rel="icon" type="image/x-icon" href="assets/media/favicon.png">
+
+    <title>Prueba Insideers</title>
+
+</head>
+<body>
+
+    <!-- start header -->
+    <header>
+        <nav class="filters">
+            <button id="sidebar-btn" class="btn">Filters</button>
+            <ul class="menu li-group" data-filter-group="horizontal">
+                <li data-filter="*"><a href="#"><p class="btn-active-filter">All</p></a></li>
+                <li data-filter=".telecommunications"><a href="#"><p>Telecommunications</p></a></li>
+                <li data-filter=".automotive"><a href="#"><p>Automotive</p></a></li>
+                <li data-filter=".banking"><a href="#"><p>Banking & Insurance</p></a></li>
+                <li data-filter=".travel"><a href="#"><p>Travel & Hospitality</p></a></li>
+                <li data-filter=".other"><a href="#"><p>Other</p></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main>
+
+        <!-- start section sidebar -->
+        <section id="sidebar">
+            <div class="container-sidebar">    
+                <img class="sidebar-close hide-md" src="assets/media/close.svg" alt="">
+                <div class="content-sidebar">
+                    <p class="title-sidebar hide-md">Search</p>
+                    <div class="menu-sidebar">
+                        <div class="search-button-group">
+                            <input class="search" id="quicksearch" type="text" name="text" placeholder="i.e. Conversational Sales">
+                        </div>
+                        <p class="title-sidebar hide-md">Filter by content type</p>
+                        <div class="button-group hide-md" data-filter-group="vertical">
+                            <button class="button btn-active-filter" data-filter="*">All</button>
+                            <button class="button" data-filter=".ebook">Ebook</button>
+                            <button class="button" data-filter=".research">Research Paper</button>
+                            <button class="button" data-filter=".story">Success Story</button>
+                            <button class="button" data-filter=".video">Video</button>
+                            <button class="button" data-filter=".blog">Blog Post</button>
+                            <button class="button" data-filter=".release">Press Release</button>
+                            <button class="button" data-filter=".webinar">Webinar</button>
+                            <button class="button" data-filter=".other">Other</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section sidebar -->
+
+        <!-- start cards section -->
+        <section id="section-card">
+            <div id="container-cards">
+                <div class="gutter-sizer"></div>
+                <div class="card travel blog">
+                    <div class="card-image">
+                        <img class="media" src="assets/media/image1.jpg" alt="image1">
+                    </div>
+                    <div class="content">
+                        <div class="card-text"> 
+                            <p>Ejemplo 1: Lorem ipsum Dolor sit amet consecuteur sit amet consecuteur</p> 
+                        </div>
+                        <button class="card-btn"> To the blog post</button>
+                    </div>
+                </div>
+    
+                <div class="card banking webinar video">
+                    <div class="card-image">
+                        <img class="play" src="assets/media/play.svg" alt="">
+                        <video class="media media-video" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                            <source src="assets/media/video2.mp4" type="video/mp4"></source>
+                        </video>
+                    </div>
+                    <div class="content">
+                        <div class="card-text"> 
+                            <p>Video 1: Lorem ipsum Dolor sit amet consecuteur sit amet consecuteur</p> 
+                        </div>
+                        <button class="card-btn"> Watch Webinar</button>
+                    </div>
+                </div>
+    
+                <div class="card travel blog story">
+                    <div class="card-image">
+                        <img class="media" src="assets/media/image2.jpg" alt="image2">
+                    </div>
+                    <div class="content">
+                        <div class="card-text"> 
+                            <p>Ejemplo 2: Lorem ipsum Dolor sit amet consecuteur sit amet consecuteur</p> 
+                        </div>
+                        <button class="card-btn"> To the blog post</button>
+                    </div>
+                </div>
+    
+                <div class="card travel video">
+                    <div class="card-image">
+                        <img class="play" src="assets/media/play.svg" alt="">
+                        <video class="media media-video" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                            <source src="assets/media/video1.mp4" type="video/mp4"></source>
+                        </video>
+                    </div>
+                    <div class="content">
+                        <div class="card-text"> 
+                            <p>Video 2: Lorem ipsum Dolor sit amet consecuteur sit amet consecuteur</p>
+                        </div>
+                        <button class="card-btn"> Watch Video</button>
+                    </div>
+                </div>
+    
+                <div class="card telecommunications blog other">
+                    <div class="card-image">
+                        <img class="media" src="assets/media/image3.jpg" alt="image3">
+                    </div>
+                    <div class="content">
+                        <div class="card-text"> 
+                            <p>Ejemplo 3: Lorem ipsum Dolor sit amet consecuteur sit amet consecuteur</p>
+                        </div>
+                        <button class="card-btn"> To the blog post</button>
+                    </div>
+                </div>
+    
+                <div class="card video travel">
+                    <div class="card-image">
+                        <img class="play" src="assets/media/play.svg" alt="">
+                        <video class="media media-video" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                            <source src="assets/media/video3.mp4" type="video/mp4"></source>
+                        </video>
+                    </div>
+                    <div class="content">
+                        <div class="card-text"> 
+                            <p>Video 3: Lorem ipsum Dolor sit amet consecuteur sit amet consecuteur</p>
+                        </div>
+                        <button class="card-btn"> Watch Video</button>
+                    </div>
+                </div>
+    
+                <div class="card automotive story">
+                    <div class="card-image">
+                        <img class="media" src="assets/media/image4.jpg" alt="image1">
+                    </div>
+                    <div class="content">
+                        <div class="card-text"> 
+                            <p>Ejemplo 4: Lorem ipsum Dolor sit amet consecuteur sit amet consecuteur</p>
+                        </div>
+                        <button class="card-btn"> To the blog post</button>
+                    </div>
+                </div>
+    
+                <div class="card automotive blog story">
+                    <div class="card-image">
+                        <img class="media" src="assets/media/image5.jpg" alt="image1">
+                    </div>
+                    <div class="content">
+                        <div class="card-text"> 
+                            <p>Ejemplo 5: Lorem ipsum Dolor sit amet consecuteur sit amet consecuteur</p>
+                        </div>
+                        <button class="card-btn"> To the blog post</button>
+                    </div>
+                </div>
+
+                <div class="card other ebook research">
+                    <div class="card-image">
+                        <img class="media" src="assets/media/image6.jpg" alt="image3">
+                    </div>
+                    <div class="content">
+                        <div class="card-text"> 
+                            <p>Ejemplo 6: Lorem ipsum Dolor sit amet consecuteur sit amet consecuteur</p>
+                        </div>
+                        <button class="card-btn"> Read Ebook</button>
+                    </div>
+                </div>
+    
+                <div class="card telecommunications release research">
+                    <div class="card-image">
+                        <img class="media" src="assets/media/image8.jpg" alt="image3">
+                    </div>
+                    <div class="content">
+                        <div class="card-text"> 
+                            <p>Ejemplo 7: Lorem ipsum Dolor sit amet consecuteur sit amet consecuteur</p>
+                        </div>
+                        <button class="card-btn"> Press Release</button>
+                    </div>
+                </div>
+    
+                <div class="card telecommunications story">
+                    <div class="card-image">
+                        <img class="media" src="assets/media/image7.jpg" alt="image1">
+                    </div>
+                    <div class="content">
+                        <div class="card-text"> 
+                            <p>Ejemplo 8: Lorem ipsum Dolor sit amet consecuteur sit amet consecuteur</p>
+                        </div>
+                        <button class="card-btn"> Read more</button>
+                    </div>
+                </div>
+    
+                <div class="card blog banking other">
+                    <div class="card-image">
+                        <img class="media" src="assets/media/image9.jpg" alt="image1">
+                    </div>
+                    <div class="content">
+                        <div class="card-text"> 
+                            <p>Ejemplo 5: Lorem ipsum Dolor sit amet consecuteur sit amet consecuteur</p>
+                        </div>
+                        <button class="card-btn"> Read more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section card -->
+
+    </main>
+    <!-- end main -->
+    
+</body>
+</html>
